@@ -1,4 +1,4 @@
-package de.q11.test_gui_2;
+package de.q11.minesweeper;
 
 public class main {
 

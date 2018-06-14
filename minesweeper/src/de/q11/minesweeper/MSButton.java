@@ -19,6 +19,9 @@ public class MSButton extends JButton{
 	public boolean getIsMine(){
 		return this.isMine;
 	}
+	public void increaseNumber() {
+		this.number++;
+	}
 	public void setNumber(int number){
 		this.number=number;
 	}

@@ -1,0 +1,14 @@
+#BlueJ class context
+comment0.params=z\ b
+comment0.target=MsButton(int,\ boolean)
+comment1.params=
+comment1.target=int\ getZahl()
+comment2.params=z
+comment2.target=void\ setZahl(int)
+comment3.params=
+comment3.target=void\ zahlErh\u00F6hen()
+comment4.params=
+comment4.target=boolean\ getBombe()
+comment5.params=b
+comment5.target=void\ setBombe(boolean)
+numComments=6

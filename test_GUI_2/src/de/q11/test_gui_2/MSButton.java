@@ -5,7 +5,7 @@ import java.awt.event.*;
 
 public class MSButton extends JButton{
 	private boolean isMine;
-	private int number;
+	private int number;				//number of mines around the button
 	public MSButton(boolean isMine, int number){
 		super();
 		this.isMine=isMine;

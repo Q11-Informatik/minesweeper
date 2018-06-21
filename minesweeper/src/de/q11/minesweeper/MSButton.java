@@ -1,6 +1,7 @@
 package de.q11.minesweeper;
 
 import javax.swing.*;
+
 import java.awt.event.*;
 
 public class MSButton extends JButton{
@@ -28,4 +29,8 @@ public class MSButton extends JButton{
 	public int getNumber(){
 		return this.number;
 	}
-}
+	
+	
+			
+	}
+

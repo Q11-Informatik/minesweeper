@@ -1,14 +1,17 @@
 package de.q11.minesweeper;
 
 import java.awt.Color;
+import java.awt.event.ActionEvent;
+import java.awt.event.ActionListener;
+
 import java.awt.GridLayout;
 import java.util.Random;
 
 import javax.swing.JPanel;
 
-public class Minefield {
+public class Minefield implements ActionListener {
 	
-	public static JPanel createMinefield(int maxSize, int mines) {
+	public  JPanel createMinefield(int maxSize, int mines) {
 		
 		int mineCount = 0;
 		
@@ -17,6 +20,7 @@ public class Minefield {
 		for(int i = 0; i<maxSize;i++) {
 			for(int j = 0; j<maxSize;j++) {
 				buttons[i][j] = new MSButton(false,0);
+				buttons[i][j].addActionListener(this);
 			}
 		}
 		
@@ -49,7 +53,7 @@ public class Minefield {
                 if(x>0 && y>0){
                     buttons[x-1][y-1].increaseNumber();}
                 // Prüfung der Belegung, temporär
-                buttons[x][y].setBackground(Color.RED);
+                buttons[x][y].setBackground(Color.BLUE);
                 
                 
                 mineCount = mineCount+1;
@@ -79,6 +83,17 @@ public class Minefield {
 		
 		return panel;
         
+	}
+
+	@Override
+	public void actionPerformed(ActionEvent e) {
+		
+		MSButton button = (MSButton)e.getSource();
+		if(button.getIsMine() == true)
+			{ button.setBackground(Color.RED);}
+		else{
+			if(button.getNumber()== 0){}
+		
 	}
 
 }

@@ -1,7 +1,6 @@
 package de.q11.minesweeper;
 
 import javax.swing.*;
-
 import java.awt.Color;
 import java.awt.event.*;
 
@@ -62,4 +61,4 @@ public class MSButton extends JButton implements MouseListener{
 		// TODO Auto-generated method stub
 		
 	}
-}
+}	

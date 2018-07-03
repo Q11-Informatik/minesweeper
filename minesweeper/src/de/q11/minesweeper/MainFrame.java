@@ -27,7 +27,8 @@ public class MainFrame extends JFrame {
 		panel.add(timer_label, BorderLayout.NORTH);
 		MSTimer timer = new MSTimer(timer_label);
 		
-		JPanel panelMiddle = Minefield.createMinefield(10, 10);		//middle Panel / Field (GRIDLAYOUT)
+		Minefield mineField = new Minefield();
+		JPanel panelMiddle = mineField.createMinefield(10, 10);		//middle Panel / Field (GRIDLAYOUT)
         panel.add(panelMiddle, BorderLayout.CENTER);
         
         this.add(panel);

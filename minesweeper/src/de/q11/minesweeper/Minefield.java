@@ -96,6 +96,7 @@ public class Minefield implements ActionListener {
 				}
 			}
 		
-	}
+		}
 
+	}
 }

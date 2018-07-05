@@ -7,6 +7,7 @@ import java.awt.event.ActionListener;
 import java.awt.GridLayout;
 import java.util.Random;
 
+import javax.swing.ImageIcon;
 import javax.swing.JPanel;
 
 public class Minefield implements ActionListener {
@@ -19,7 +20,7 @@ public class Minefield implements ActionListener {
 		
 		for(int i = 0; i<maxSize;i++) {
 			for(int j = 0; j<maxSize;j++) {
-				buttons[i][j] = new MSButton(false,0);
+				buttons[i][j] = new MSButton(false,0,i,j);
 				buttons[i][j].addActionListener(this);
 			}
 		}
@@ -88,6 +89,7 @@ public class Minefield implements ActionListener {
 	@Override
 	public void actionPerformed(ActionEvent e) {
 		
+		
 		MSButton button = (MSButton)e.getSource();
 		if(button.getIsMine() == true)
 			{ button.setBackground(Color.RED);}
@@ -97,6 +99,8 @@ public class Minefield implements ActionListener {
 			}
 		
 		}
-
+		
+		
+		//button.setIcon(mine);
 	}
 }

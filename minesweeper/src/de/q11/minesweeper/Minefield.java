@@ -92,7 +92,9 @@ public class Minefield implements ActionListener {
 		if(button.getIsMine() == true)
 			{ button.setBackground(Color.RED);}
 		else{
-			if(button.getNumber()== 0){}
+			if(button.getNumber()== 0){
+				}
+			}
 		
 	}
 
